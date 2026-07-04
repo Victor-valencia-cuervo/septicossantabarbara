@@ -165,7 +165,7 @@
              ➜ Reemplaza: images/hero-bg.jpg
         -->
         <section id="inicio" class="snap-section relative text-white pt-16 flex items-center"
-            style="background-image: linear-gradient(to right, rgba(15,23,42,0.92), rgba(15,23,42,0.75)), url('images/hero-bg.jpg'); background-size: cover; background-position: center;">
+            style="background-image: linear-gradient(to right, rgba(15, 23, 42, 0.904), rgba(15, 23, 42, 0.596)), url('images/hero-bg.jpg'); background-size: cover; background-position: center;">
 
             <div
                 class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center py-12">
@@ -173,26 +173,26 @@
                 <!-- Columna de texto -->
                 <div class="lg:col-span-7 flex flex-col justify-center space-y-6 text-center lg:text-left">
                     <div
-                        class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md px-4 py-1.5 rounded-full text-sky-200 text-xs md:text-sm font-semibold tracking-wider mx-auto lg:mx-0 w-max">
+                        class="hero-animate hero-delay-1 inline-flex items-center gap-2 bg-white/10 backdrop-blur-md px-4 py-1.5 rounded-full text-sky-200 text-xs md:text-sm font-semibold tracking-wider mx-auto lg:mx-0 w-max">
                         <span class="w-2.5 h-2.5 bg-sky-400 rounded-full animate-ping"></span>
                         Calidad y Confianza Certificada
                     </div>
 
                     <h1
-                        class="text-4xl sm:text-5xl md:text-6xl font-black tracking-tight leading-none text-white drop-shadow-md">
+                        class="hero-animate hero-delay-2 text-4xl sm:text-5xl md:text-6xl font-black tracking-tight leading-none text-white drop-shadow-md">
                         SÉPTICOS <br>
                         <span class="text-transparent bg-clip-text bg-gradient-to-r from-sky-300 to-cyan-300">SANTA
                             BÁRBARA</span>
                     </h1>
 
-                    <p class="text-lg md:text-xl text-sky-100 max-w-2xl mx-auto lg:mx-0 font-light">
+                    <p class="hero-animate hero-delay-3 text-lg md:text-xl text-sky-100 max-w-2xl mx-auto lg:mx-0 font-light">
                         Expertos en instalación y mantenimiento integral de pozos sépticos y venta de tanques de agua de
                         alta calidad desde 250 hasta 10,000 Litros.
                     </p>
 
                     <!-- Tarjeta Didier Cuervo -->
                     <div
-                        class="bg-white/10 backdrop-blur-md border border-white/20 p-4 rounded-2xl max-w-md mx-auto lg:mx-0 flex items-center gap-4 text-left shadow-lg transition duration-300 mb-16 sm:mb-20">
+                        class="hero-animate hero-delay-4 bg-white/10 backdrop-blur-md border border-white/20 p-4 rounded-2xl max-w-md mx-auto lg:mx-0 flex items-center gap-4 text-left shadow-lg transition duration-300 mb-16 sm:mb-20">
                         <div
                             class="w-12 h-12 rounded-full bg-sky-500 flex items-center justify-center text-white text-xl">
                             <i class="fa-solid fa-user-gear"></i>
@@ -207,7 +207,7 @@
                         </div>
                     </div>
 
-                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-2">
+                    <div class="hero-animate hero-delay-5 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-2">
                         <button onclick="scrollToSection('contacto')"
                             class="bg-gradient-to-r from-sky-500 to-brand text-white px-8 py-4 rounded-xl hover:shadow-lg transition-all font-bold text-base flex items-center justify-center gap-2 shadow">
                             <i class="fa-solid fa-envelope"></i> Contáctanos
@@ -220,7 +220,7 @@
                 </div>
 
                 <!-- Tarjeta visual -->
-                <div class="lg:col-span-5 flex justify-center items-center">
+                <div class="hero-card-animate lg:col-span-5 flex justify-center items-center">
                     <div class="relative w-80 sm:w-96 flex items-center justify-center py-8">
                         <div class="absolute inset-0   bg-sky-500/10 rounded-full animate-pulse"></div>
                         <div class="absolute inset-8   bg-cyan-500/10 rounded-full animate-ping duration-3000"></div>
@@ -275,7 +275,7 @@
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8 max-w-6xl mx-auto w-full px-2">
 
                     <!-- Servicio 1: Instalación -->
-                    <div
+                    <a href="pages/servicios/instalacion-profesional.html"
                         class="bg-white rounded-3xl p-6 sm:p-8 shadow-xl border border-sky-100 hover:border-brand/40 hover:-translate-y-2 transition-all duration-300 flex flex-col h-full group">
                         <div
                             class="w-16 h-16 bg-sky-100 rounded-2xl flex items-center justify-center text-brand text-2xl mb-6 group-hover:bg-brand group-hover:text-white transition duration-300 shadow-md">
@@ -291,10 +291,10 @@
                             class="mt-6 flex items-center gap-2 text-brand font-bold group-hover:gap-3 transition-all duration-300 text-sm">
                             Saber más <i class="fa-solid fa-arrow-right"></i>
                         </div>
-                    </div>
+                    </a>
 
                     <!-- Servicio 2: Mantenimiento -->
-                    <div
+                    <a href="pages/servicios/limpieza-mantenimiento.html"
                         class="bg-white rounded-3xl p-6 sm:p-8 shadow-xl border border-sky-100 hover:border-brand/40 hover:-translate-y-2 transition-all duration-300 flex flex-col h-full group">
                         <div
                             class="w-16 h-16 bg-cyan-100 rounded-2xl flex items-center justify-center text-cyan-600 text-2xl mb-6 group-hover:bg-cyan-600 group-hover:text-white transition duration-300 shadow-md">
@@ -310,10 +310,10 @@
                             class="mt-6 flex items-center gap-2 text-cyan-600 font-bold group-hover:gap-3 transition-all duration-300 text-sm">
                             Saber más <i class="fa-solid fa-arrow-right"></i>
                         </div>
-                    </div>
+                    </a>
 
                     <!-- Servicio 3: Tanques -->
-                    <div
+                    <a href="pages/servicios/tanques-almacenamiento.html"
                         class="bg-white rounded-3xl p-6 sm:p-8 shadow-xl border border-sky-100 hover:border-brand/40 hover:-translate-y-2 transition-all duration-300 flex flex-col h-full group">
                         <div
                             class="w-16 h-16 bg-blue-100 rounded-2xl flex items-center justify-center text-blue-600 text-2xl mb-6 group-hover:bg-blue-600 group-hover:text-white transition duration-300 shadow-md">
@@ -329,7 +329,7 @@
                             class="mt-6 flex items-center gap-2 text-blue-600 font-bold group-hover:gap-3 transition-all duration-300 text-sm">
                             Ver catálogo <i class="fa-solid fa-arrow-right"></i>
                         </div>
-                    </div>
+                    </a>
                 </div>
             </div>
         </section>

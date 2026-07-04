@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Limpieza Profesional de Pozos Sépticos | Sépticos Santa Bárbara</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../../images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../../css/styles.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: { light: '#38bdf8', DEFAULT: '#0284c7', dark: '#0369a1', accent: '#06b6d4', navy: '#0f172a' }
+                    },
+                    fontFamily: { sans: ['Inter', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+    <meta name="description" content="Limpieza y mantenimiento profesional de pozos sépticos. Succión de lodos, lavado a presión y aplicación de bacterias. Sépticos Santa Bárbara.">
+</head>
+
+<body class="bg-slate-50 text-slate-800 font-sans antialiased">
+
+    <!-- ═══════════ NAVBAR ═══════════ -->
+    <nav class="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-md z-40 border-b border-sky-100 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16 md:h-20">
+                <a href="../../index.html" class="flex items-center gap-3">
+                    <img src="../../images/logo.png" alt="Sépticos Santa Bárbara" class="h-10 sm:h-12 w-auto object-contain"
+                        onerror="this.src='https://placehold.co/60x60/0284c7/ffffff?text=SSB'">
+                    <div class="flex flex-col">
+                        <span class="font-extrabold text-brand text-sm md:text-base leading-tight tracking-wider uppercase">SÉPTICOS</span>
+                        <span class="font-bold text-slate-600 text-[10px] md:text-xs tracking-widest leading-none">SANTA BÁRBARA</span>
+                    </div>
+                </a>
+                <div class="hidden lg:flex space-x-6 items-center">
+                    <a href="../../index.html" class="text-slate-600 hover:text-brand font-semibold text-sm transition">Inicio</a>
+                    <a href="../../index.html#servicios" class="text-brand font-bold text-sm border-b-2 border-brand pb-0.5">Servicios</a>
+                    <a href="../../index.html#galeria" class="text-slate-600 hover:text-brand font-semibold text-sm transition">Galería</a>
+                    <a href="../../index.html#cotizador" class="text-slate-600 hover:text-brand font-semibold text-sm transition">Cotizador</a>
+                    <a href="../../index.html#resenas" class="text-slate-600 hover:text-brand font-semibold text-sm transition">Reseñas</a>
+                    <a href="../../index.html#contacto" class="bg-brand text-white px-5 py-2.5 rounded-full hover:bg-brand-dark transition-all duration-300 shadow-md font-bold text-sm flex items-center gap-2">
+                        <i class="fa-solid fa-phone"></i> Contáctanos
+                    </a>
+                </div>
+                <button id="mobile-menu-btn" class="lg:hidden text-slate-600 hover:text-brand focus:outline-none p-2">
+                    <i class="fa-solid fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-sky-100 shadow-lg absolute w-full left-0 z-50">
+            <div class="px-4 pt-2 pb-6 space-y-2">
+                <a href="../../index.html" class="block px-3 py-2 text-slate-700 hover:text-brand hover:bg-sky-50 rounded-md font-medium">Inicio</a>
+                <a href="../../index.html#galeria" class="block px-3 py-2 text-slate-700 hover:text-brand hover:bg-sky-50 rounded-md font-medium">Galería</a>
+                <a href="../../index.html#contacto" class="block text-center bg-brand text-white py-3 rounded-xl font-bold hover:bg-brand-dark transition shadow-md">
+                    <i class="fa-solid fa-phone mr-1"></i> Contáctanos
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ═══════════ BREADCRUMB ═══════════ -->
+    <div class="breadcrumb-bar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <nav class="flex items-center gap-2 text-xs sm:text-sm">
+                <a href="../../index.html" class="text-sky-300 hover:text-white transition font-medium flex items-center gap-1">
+                    <i class="fa-solid fa-house text-xs"></i> Inicio
+                </a>
+                <i class="fa-solid fa-chevron-right text-sky-500 text-xs"></i>
+                <span class="text-white font-semibold">Limpieza & Mantenimiento</span>
+            </nav>
+        </div>
+    </div>
+
+    <!-- ═══════════ HERO ═══════════ -->
+    <section class="service-hero"
+        style="background-image: linear-gradient(to right, rgba(15,23,42,0.92), rgba(3,105,161,0.60)), url('../../images/hero-bg.jpg'); background-size:cover; background-position:center;">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-20">
+            <div class="max-w-3xl">
+                <div class="hero-animate hero-delay-1 inline-flex items-center gap-2 bg-white/10 backdrop-blur-md px-4 py-1.5 rounded-full text-sky-200 text-xs sm:text-sm font-semibold tracking-wider mb-6">
+                    <i class="fa-solid fa-pump-soap text-sky-400"></i>
+                    Servicio Especializado
+                </div>
+                <h1 class="hero-animate hero-delay-2 text-4xl sm:text-5xl md:text-6xl font-black text-white leading-tight mb-6">
+                    Limpieza Profesional de<br>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-sky-300 to-cyan-300">Pozos Sépticos</span>
+                </h1>
+                <p class="hero-animate hero-delay-3 text-lg md:text-xl text-sky-100 font-light max-w-2xl mb-10 leading-relaxed">
+                    Eliminamos lodos, grasas y residuos para mantener su sistema funcionando correctamente y prolongar su vida útil.
+                </p>
+                <div class="hero-animate hero-delay-4 flex flex-col sm:flex-row gap-4">
+                    <a href="https://wa.me/573133815853?text=Hola%20Didier%2C%20necesito%20una%20limpieza%20de%20pozo%20séptico.%20¿Podría%20darme%20información?" target="_blank"
+                        class="bg-emerald-600 hover:bg-emerald-500 text-white px-8 py-4 rounded-xl transition-all font-bold text-base flex items-center justify-center gap-2 shadow-lg">
+                        <i class="fa-brands fa-whatsapp text-xl"></i> Solicitar Limpieza
+                    </a>
+                    <a href="#proceso"
+                        class="bg-white/10 hover:bg-white/20 backdrop-blur-md text-white border border-white/20 px-8 py-4 rounded-xl transition font-bold text-base flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-route text-sky-300"></i> Ver proceso
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════ ¿CUÁNDO NECESITA UNA LIMPIEZA? ═══════════ -->
+    <section class="bg-white py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 reveal">
+                <span class="text-brand font-bold tracking-widest uppercase text-sm">Señales de Alerta</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-2">¿Cuándo necesita una limpieza?</h2>
+                <div class="w-24 h-1.5 bg-brand mx-auto mt-3 rounded-full"></div>
+                <p class="text-slate-500 font-light mt-4 max-w-xl mx-auto text-sm sm:text-base">Reconozca estas señales y actúe a tiempo para evitar daños mayores.</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+
+                <div class="service-card reveal text-center bg-red-50 border-red-100">
+                    <div class="w-14 h-14 bg-red-100 rounded-2xl flex items-center justify-center text-red-500 text-2xl mx-auto mb-4 shadow-md">
+                        <i class="fa-solid fa-wind"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-800 text-lg mb-2">Malos Olores</h3>
+                    <p class="text-slate-500 font-light text-sm leading-relaxed">Si percibe olores nauseabundos dentro o fuera de la vivienda, es señal de que el pozo está saturado.</p>
+                </div>
+
+                <div class="service-card reveal text-center bg-amber-50 border-amber-100" style="transition-delay:0.08s">
+                    <div class="w-14 h-14 bg-amber-100 rounded-2xl flex items-center justify-center text-amber-600 text-2xl mx-auto mb-4 shadow-md">
+                        <i class="fa-solid fa-arrow-up-from-ground-water"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-800 text-lg mb-2">Reboses</h3>
+                    <p class="text-slate-500 font-light text-sm leading-relaxed">Las aguas negras que asoman a la superficie indican que el sistema está completamente colmatado.</p>
+                </div>
+
+                <div class="service-card reveal text-center bg-orange-50 border-orange-100" style="transition-delay:0.16s">
+                    <div class="w-14 h-14 bg-orange-100 rounded-2xl flex items-center justify-center text-orange-600 text-2xl mx-auto mb-4 shadow-md">
+                        <i class="fa-solid fa-hourglass-half"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-800 text-lg mb-2">Drenajes Lentos</h3>
+                    <p class="text-slate-500 font-light text-sm leading-relaxed">Si lavabos, duchas e inodoros desaguan lentamente, el sistema está perdiendo capacidad de absorción.</p>
+                </div>
+
+                <div class="service-card reveal text-center bg-slate-50 border-slate-200" style="transition-delay:0.24s">
+                    <div class="w-14 h-14 bg-slate-200 rounded-2xl flex items-center justify-center text-slate-600 text-2xl mx-auto mb-4 shadow-md">
+                        <i class="fa-solid fa-calendar-xmark"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-800 text-lg mb-2">Mucho Tiempo sin Mantenimiento</h3>
+                    <p class="text-slate-500 font-light text-sm leading-relaxed">Si su pozo lleva más de 2-3 años sin revisión, es el momento de realizar una limpieza preventiva.</p>
+                </div>
+
+                <div class="service-card reveal text-center bg-blue-50 border-blue-100" style="transition-delay:0.32s">
+                    <div class="w-14 h-14 bg-blue-100 rounded-2xl flex items-center justify-center text-blue-600 text-2xl mx-auto mb-4 shadow-md">
+                        <i class="fa-solid fa-water"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-800 text-lg mb-2">Filtraciones</h3>
+                    <p class="text-slate-500 font-light text-sm leading-relaxed">Zonas húmedas o encharcadas cerca del sistema séptico pueden indicar fugas que requieren atención urgente.</p>
+                </div>
+
+                <div class="service-card reveal text-center bg-emerald-50 border-emerald-100" style="transition-delay:0.40s">
+                    <div class="w-14 h-14 bg-emerald-100 rounded-2xl flex items-center justify-center text-emerald-600 text-2xl mx-auto mb-4 shadow-md">
+                        <i class="fa-solid fa-leaf"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-800 text-lg mb-2">Vegetación Excesiva</h3>
+                    <p class="text-slate-500 font-light text-sm leading-relaxed">Un crecimiento de pasto inusualmente verde y exuberante sobre el tanque puede indicar filtraciones.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════ QUÉ INCLUYE ═══════════ -->
+    <section class="bg-sky-50 py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 reveal">
+                <span class="text-brand font-bold tracking-widest uppercase text-sm">Servicio Completo</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-2">¿Qué incluye nuestro servicio?</h2>
+                <div class="w-24 h-1.5 bg-brand mx-auto mt-3 rounded-full"></div>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+
+                <div class="benefit-check reveal">
+                    <div class="w-9 h-9 bg-brand/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                        <i class="fa-solid fa-check text-brand text-sm font-bold"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-slate-800 text-sm">Succión de lodos</h4>
+                        <p class="text-slate-500 text-xs mt-0.5 leading-relaxed">Extracción total de lodos acumulados con equipo de vacío de alta potencia.</p>
+                    </div>
+                </div>
+
+                <div class="benefit-check reveal" style="transition-delay:0.08s">
+                    <div class="w-9 h-9 bg-brand/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                        <i class="fa-solid fa-check text-brand text-sm"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-slate-800 text-sm">Lavado a presión</h4>
+                        <p class="text-slate-500 text-xs mt-0.5 leading-relaxed">Hidrolavado interno de paredes y fondo del pozo para eliminar incrustaciones.</p>
+                    </div>
+                </div>
+
+                <div class="benefit-check reveal" style="transition-delay:0.16s">
+                    <div class="w-9 h-9 bg-brand/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                        <i class="fa-solid fa-check text-brand text-sm"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-slate-800 text-sm">Limpieza de tuberías</h4>
+                        <p class="text-slate-500 text-xs mt-0.5 leading-relaxed">Desobstrucción y lavado de tuberías de entrada y salida del sistema.</p>
+                    </div>
+                </div>
+
+                <div class="benefit-check reveal" style="transition-delay:0.24s">
+                    <div class="w-9 h-9 bg-brand/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                        <i class="fa-solid fa-check text-brand text-sm"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-slate-800 text-sm">Aplicación de bacterias</h4>
+                        <p class="text-slate-500 text-xs mt-0.5 leading-relaxed">Inoculación de bacterias digestivas para reactivar el proceso biológico natural.</p>
+                    </div>
+                </div>
+
+                <div class="benefit-check reveal" style="transition-delay:0.32s">
+                    <div class="w-9 h-9 bg-brand/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                        <i class="fa-solid fa-check text-brand text-sm"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-slate-800 text-sm">Revisión del sistema</h4>
+                        <p class="text-slate-500 text-xs mt-0.5 leading-relaxed">Inspección completa del estado de tuberías, tapas y estructura del pozo.</p>
+                    </div>
+                </div>
+
+                <div class="benefit-check reveal" style="transition-delay:0.40s">
+                    <div class="w-9 h-9 bg-brand/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                        <i class="fa-solid fa-check text-brand text-sm"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-slate-800 text-sm">Disposición adecuada de residuos</h4>
+                        <p class="text-slate-500 text-xs mt-0.5 leading-relaxed">Los lodos extraídos se trasladan a sitios de disposición final autorizados.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════ PROCESO ═══════════ -->
+    <section id="proceso" class="bg-white py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 reveal">
+                <span class="text-brand font-bold tracking-widest uppercase text-sm">Metodología</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-2">Nuestro Proceso</h2>
+                <div class="w-24 h-1.5 bg-brand mx-auto mt-3 rounded-full"></div>
+            </div>
+
+            <div class="max-w-2xl mx-auto">
+                <div class="timeline">
+
+                    <div class="timeline-step">
+                        <div class="timeline-dot">1</div>
+                        <div class="bg-sky-50 border border-sky-100 rounded-2xl p-5 hover:border-brand/40 hover:shadow-md transition-all">
+                            <h3 class="font-bold text-slate-800 text-lg flex items-center gap-2"><i class="fa-solid fa-eye text-brand text-sm"></i> Inspección</h3>
+                            <p class="text-slate-500 font-light text-sm mt-1 leading-relaxed">Evaluamos el estado del pozo, revisamos los niveles de lodos y verificamos el acceso para el equipo de succión.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-step">
+                        <div class="timeline-dot">2</div>
+                        <div class="bg-sky-50 border border-sky-100 rounded-2xl p-5 hover:border-brand/40 hover:shadow-md transition-all">
+                            <h3 class="font-bold text-slate-800 text-lg flex items-center gap-2"><i class="fa-solid fa-truck text-cyan-600 text-sm"></i> Succión</h3>
+                            <p class="text-slate-500 font-light text-sm mt-1 leading-relaxed">Utilizamos camión de vacío de alta potencia para extraer el 100% de los lodos y líquidos acumulados en el interior.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-step">
+                        <div class="timeline-dot">3</div>
+                        <div class="bg-sky-50 border border-sky-100 rounded-2xl p-5 hover:border-brand/40 hover:shadow-md transition-all">
+                            <h3 class="font-bold text-slate-800 text-lg flex items-center gap-2"><i class="fa-solid fa-shower text-blue-600 text-sm"></i> Lavado</h3>
+                            <p class="text-slate-500 font-light text-sm mt-1 leading-relaxed">Hidrolavado de alta presión de las paredes internas, fondo y tuberías para remover incrustaciones de grasa y sedimento.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-step">
+                        <div class="timeline-dot">4</div>
+                        <div class="bg-sky-50 border border-sky-100 rounded-2xl p-5 hover:border-brand/40 hover:shadow-md transition-all">
+                            <h3 class="font-bold text-slate-800 text-lg flex items-center gap-2"><i class="fa-solid fa-bacteria text-emerald-600 text-sm"></i> Aplicación de Enzimas</h3>
+                            <p class="text-slate-500 font-light text-sm mt-1 leading-relaxed">Aplicamos bacterias y enzimas digestivas especializadas que reactivan la degradación biológica del sistema para su correcto funcionamiento.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-step">
+                        <div class="timeline-dot">5</div>
+                        <div class="bg-gradient-to-r from-brand to-brand-dark border-0 rounded-2xl p-5 text-white shadow-lg">
+                            <h3 class="font-bold text-white text-lg flex items-center gap-2"><i class="fa-solid fa-circle-check text-sky-200 text-sm"></i> Revisión Final</h3>
+                            <p class="text-sky-100 font-light text-sm mt-1 leading-relaxed">Inspección final del estado del sistema, reporte al propietario con recomendaciones de mantenimiento y entrega del servicio completado.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════ GALERÍA ═══════════ -->
+    <section class="bg-slate-900 py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 reveal">
+                <span class="text-brand font-bold tracking-widest uppercase text-sm">Nuestros Trabajos</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-2">Galería de Mantenimiento</h2>
+                <div class="w-24 h-1.5 bg-brand mx-auto mt-3 rounded-full"></div>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4 max-w-5xl mx-auto">
+                <div class="service-gallery-item reveal h-52 md:h-64 rounded-2xl shadow-md">
+                    <img src="../../images/galeria/mantenimiento-01.jpg" alt="Succión de lodos"
+                        onerror="this.src='https://placehold.co/400x300/0284c7/ffffff?text=Mantenimiento+01'">
+                    <div class="overlay"><p class="text-white font-bold text-sm">Succión de Lodos Acumulados</p></div>
+                </div>
+                <div class="service-gallery-item reveal h-52 md:h-64 rounded-2xl shadow-md" style="transition-delay:0.1s">
+                    <img src="../../images/galeria/mantenimiento-02.jpg" alt="Mantenimiento en campo"
+                        onerror="this.src='https://placehold.co/400x300/0369a1/ffffff?text=Mantenimiento+02'">
+                    <div class="overlay"><p class="text-white font-bold text-sm">Mantenimiento Preventivo en Fincas</p></div>
+                </div>
+                <div class="service-gallery-item reveal h-52 md:h-64 rounded-2xl shadow-md" style="transition-delay:0.2s">
+                    <img src="../../images/galeria/instalacion-01.jpg" alt="Inspección"
+                        onerror="this.src='https://placehold.co/400x300/075985/ffffff?text=Inspección'">
+                    <div class="overlay"><p class="text-white font-bold text-sm">Inspección y Evaluación del Sistema</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════ BENEFICIOS ═══════════ -->
+    <section class="bg-white py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 reveal">
+                <span class="text-brand font-bold tracking-widest uppercase text-sm">Resultados Garantizados</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-2">Beneficios del Mantenimiento</h2>
+                <div class="w-24 h-1.5 bg-brand mx-auto mt-3 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
+
+                <div class="service-card reveal text-center">
+                    <div class="w-14 h-14 bg-emerald-100 rounded-2xl flex items-center justify-center text-emerald-600 text-2xl mx-auto mb-4">
+                        <i class="fa-solid fa-face-smile-beam"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-800 mb-2">Menos Olores</h3>
+                    <p class="text-slate-500 font-light text-sm leading-relaxed">Un sistema limpio elimina por completo los malos olores del ambiente.</p>
+                </div>
+
+                <div class="service-card reveal text-center" style="transition-delay:0.08s">
+                    <div class="w-14 h-14 bg-sky-100 rounded-2xl flex items-center justify-center text-brand text-2xl mx-auto mb-4">
+                        <i class="fa-solid fa-clock-rotate-left"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-800 mb-2">Mayor Vida Útil</h3>
+                    <p class="text-slate-500 font-light text-sm leading-relaxed">El mantenimiento regular prolonga la vida del sistema hasta décadas.</p>
+                </div>
+
+                <div class="service-card reveal text-center" style="transition-delay:0.16s">
+                    <div class="w-14 h-14 bg-blue-100 rounded-2xl flex items-center justify-center text-blue-600 text-2xl mx-auto mb-4">
+                        <i class="fa-solid fa-ban"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-800 mb-2">Menos Obstrucciones</h3>
+                    <p class="text-slate-500 font-light text-sm leading-relaxed">Evita taponamientos en tuberías y el colapso del sistema de drenaje.</p>
+                </div>
+
+                <div class="service-card reveal text-center" style="transition-delay:0.24s">
+                    <div class="w-14 h-14 bg-amber-100 rounded-2xl flex items-center justify-center text-amber-600 text-2xl mx-auto mb-4">
+                        <i class="fa-solid fa-piggy-bank"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-800 mb-2">Ahorro en Reparaciones</h3>
+                    <p class="text-slate-500 font-light text-sm leading-relaxed">Un pozo limpio evita reparaciones costosas por daños estructurales o filtraciones.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════ RECOMENDACIONES ═══════════ -->
+    <section class="bg-sky-50 py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 reveal">
+                <span class="text-brand font-bold tracking-widest uppercase text-sm">Consejos del Experto</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-2">Recomendaciones de Mantenimiento</h2>
+                <div class="w-24 h-1.5 bg-brand mx-auto mt-3 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+
+                <div class="recommendation-card reveal">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-10 h-10 bg-brand/10 rounded-xl flex items-center justify-center text-brand flex-shrink-0">
+                            <i class="fa-solid fa-calendar-days"></i>
+                        </div>
+                        <h3 class="font-bold text-slate-800">¿Cada cuánto hacer mantenimiento?</h3>
+                    </div>
+                    <ul class="space-y-2 text-slate-600 font-light text-sm">
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-circle text-brand text-[6px] mt-2 flex-shrink-0"></i><span><strong>Cada 2 años:</strong> Viviendas unifamiliares con uso normal (3-5 personas).</span></li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-circle text-brand text-[6px] mt-2 flex-shrink-0"></i><span><strong>Cada año:</strong> Hogares con más de 6 personas o uso intensivo.</span></li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-circle text-brand text-[6px] mt-2 flex-shrink-0"></i><span><strong>Cada 6 meses:</strong> Restaurantes, hoteles y establecimientos comerciales.</span></li>
+                    </ul>
+                </div>
+
+                <div class="recommendation-card reveal" style="transition-delay:0.1s">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-10 h-10 bg-red-100 rounded-xl flex items-center justify-center text-red-500 flex-shrink-0">
+                            <i class="fa-solid fa-ban"></i>
+                        </div>
+                        <h3 class="font-bold text-slate-800">Qué NO arrojar al sistema</h3>
+                    </div>
+                    <ul class="space-y-2 text-slate-600 font-light text-sm">
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-xmark text-red-400 text-xs mt-1 flex-shrink-0"></i><span>Toallas húmedas, pañales y elementos sólidos.</span></li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-xmark text-red-400 text-xs mt-1 flex-shrink-0"></i><span>Aceites, grasas de cocina y pinturas.</span></li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-xmark text-red-400 text-xs mt-1 flex-shrink-0"></i><span>Medicamentos y productos químicos.</span></li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-xmark text-red-400 text-xs mt-1 flex-shrink-0"></i><span>Cloro en exceso (mata las bacterias benéficas).</span></li>
+                    </ul>
+                </div>
+
+                <div class="recommendation-card reveal" style="transition-delay:0.2s">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-10 h-10 bg-emerald-100 rounded-xl flex items-center justify-center text-emerald-600 flex-shrink-0">
+                            <i class="fa-solid fa-leaf"></i>
+                        </div>
+                        <h3 class="font-bold text-slate-800">Cómo prolongar la vida útil</h3>
+                    </div>
+                    <ul class="space-y-2 text-slate-600 font-light text-sm">
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-emerald-500 text-xs mt-1 flex-shrink-0"></i><span>Use jabones y detergentes biodegradables.</span></li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-emerald-500 text-xs mt-1 flex-shrink-0"></i><span>Aplique bacterias activadoras cada 3 meses.</span></li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-emerald-500 text-xs mt-1 flex-shrink-0"></i><span>No estacione vehículos sobre el área del tanque.</span></li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-circle-check text-emerald-500 text-xs mt-1 flex-shrink-0"></i><span>Realice inspecciones visuales periódicas.</span></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════ FAQ ═══════════ -->
+    <section class="bg-white py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 reveal">
+                <span class="text-brand font-bold tracking-widest uppercase text-sm">Resolvemos sus Dudas</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-2">Preguntas Frecuentes</h2>
+                <div class="w-24 h-1.5 bg-brand mx-auto mt-3 rounded-full"></div>
+            </div>
+
+            <div class="max-w-3xl mx-auto bg-white rounded-3xl shadow-xl border border-sky-100 p-6 sm:p-8 reveal">
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>¿Cada cuánto tiempo se debe limpiar el pozo?</span>
+                        <div class="faq-icon"><i class="fa-solid fa-plus"></i></div>
+                    </div>
+                    <div class="faq-answer">
+                        Para viviendas familiares con uso normal se recomienda limpieza <strong>cada 2 a 3 años</strong>. Si el número de usuarios es alto o hay uso de grasas de cocina (restaurantes), el intervalo debe reducirse a 6-12 meses. La inspección visual anual es siempre recomendable.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>¿Cuánto tiempo demora una limpieza?</span>
+                        <div class="faq-icon"><i class="fa-solid fa-plus"></i></div>
+                    </div>
+                    <div class="faq-answer">
+                        Una limpieza estándar de pozo séptico residencial toma entre <strong>2 y 4 horas</strong>, dependiendo del nivel de acumulación de lodos y la capacidad del tanque. Para sistemas de gran capacidad comercial puede extenderse hasta medio día de trabajo.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>¿El proceso genera malos olores durante el trabajo?</span>
+                        <div class="faq-icon"><i class="fa-solid fa-plus"></i></div>
+                    </div>
+                    <div class="faq-answer">
+                        Es normal que existan <strong>olores leves y momentáneos</strong> durante la apertura del tanque y la extracción, los cuales desaparecen rápidamente. Nuestro equipo trabaja con eficiencia para minimizar el tiempo de exposición. Luego de la aplicación de bacterias y el cierre del sistema, los olores desaparecen por completo.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════ CTA FINAL ═══════════ -->
+    <section class="bg-gradient-to-br from-brand-dark to-slate-900 py-20 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="reveal max-w-3xl mx-auto">
+                <div class="w-20 h-20 bg-white/10 rounded-3xl flex items-center justify-center text-sky-300 text-3xl mx-auto mb-6">
+                    <i class="fa-solid fa-pump-soap"></i>
+                </div>
+                <h2 class="text-3xl sm:text-4xl font-black mb-4">¿Necesita un mantenimiento urgente?</h2>
+                <p class="text-sky-100 font-light text-lg mb-8 leading-relaxed">
+                    No espere a que el problema se agrave. Contáctenos ahora por WhatsApp y programamos la limpieza de su pozo séptico a la brevedad posible.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="https://wa.me/573133815853?text=Hola%20Didier%2C%20necesito%20una%20limpieza%20urgente%20de%20mi%20pozo%20séptico.%20¿Puede%20ayudarme?"
+                        target="_blank"
+                        class="bg-emerald-600 hover:bg-emerald-500 text-white font-black py-4 px-8 rounded-2xl transition shadow-xl flex items-center justify-center gap-3 text-lg">
+                        <i class="fa-brands fa-whatsapp text-2xl"></i> Solicitar Mantenimiento
+                    </a>
+                    <a href="tel:3133815853" class="bg-white/10 hover:bg-white/20 border border-white/20 text-white font-bold py-4 px-8 rounded-2xl transition flex items-center justify-center gap-3 text-lg">
+                        <i class="fa-solid fa-phone"></i> 313 381 5853
+                    </a>
+                </div>
+                <div class="mt-8 flex flex-wrap justify-center gap-4 text-sm text-sky-200">
+                    <span class="flex items-center gap-1"><i class="fa-solid fa-circle-check text-emerald-400"></i> Atención el mismo día</span>
+                    <span class="flex items-center gap-1"><i class="fa-solid fa-circle-check text-emerald-400"></i> Equipo especializado</span>
+                    <span class="flex items-center gap-1"><i class="fa-solid fa-circle-check text-emerald-400"></i> Trabajo garantizado</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════ SERVICIOS RELACIONADOS ═══════════ -->
+    <section class="bg-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-10 reveal">
+                <span class="text-brand font-bold tracking-widest uppercase text-sm">También Ofrecemos</span>
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-2">Servicios Relacionados</h2>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-3xl mx-auto">
+                <a href="instalacion-profesional.html" class="service-card reveal flex items-center gap-4 hover:bg-sky-50">
+                    <div class="w-14 h-14 bg-sky-100 rounded-2xl flex items-center justify-center text-brand text-2xl flex-shrink-0">
+                        <i class="fa-solid fa-screwdriver-wrench"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-slate-800">Instalación Profesional</h3>
+                        <p class="text-slate-500 text-sm font-light mt-1">Sistemas sépticos completos para toda clase de proyectos.</p>
+                        <span class="text-brand text-sm font-bold flex items-center gap-1 mt-2">Ver servicio <i class="fa-solid fa-arrow-right text-xs"></i></span>
+                    </div>
+                </a>
+                <a href="tanques-almacenamiento.html" class="service-card reveal flex items-center gap-4 hover:bg-sky-50" style="transition-delay:0.1s">
+                    <div class="w-14 h-14 bg-blue-100 rounded-2xl flex items-center justify-center text-blue-600 text-2xl flex-shrink-0">
+                        <i class="fa-solid fa-faucet-drip"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-slate-800">Tanques de Almacenamiento</h3>
+                        <p class="text-slate-500 text-sm font-light mt-1">Venta e instalación de tanques de 250 a 10,000 litros.</p>
+                        <span class="text-blue-600 text-sm font-bold flex items-center gap-1 mt-2">Ver catálogo <i class="fa-solid fa-arrow-right text-xs"></i></span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════ FOOTER ═══════════ -->
+    <footer class="bg-sky-950 text-white py-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                <div class="flex items-center gap-3">
+                    <img src="../../images/logo.png" alt="Logo" class="h-10 w-auto object-contain"
+                        onerror="this.src='https://placehold.co/40x40/0284c7/ffffff?text=SSB'">
+                    <div>
+                        <span class="font-extrabold text-brand text-sm tracking-wider uppercase block">SÉPTICOS SANTA BÁRBARA</span>
+                        <span class="text-slate-400 text-xs">Didier Cuervo · 313 381 5853</span>
+                    </div>
+                </div>
+                <div class="flex gap-4">
+                    <a href="https://wa.me/573133815853" target="_blank" class="w-10 h-10 bg-emerald-600 rounded-xl flex items-center justify-center hover:bg-emerald-500 transition"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://www.facebook.com/share/192qztjzH5/" target="_blank" class="w-10 h-10 bg-blue-700 rounded-xl flex items-center justify-center hover:bg-blue-600 transition"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://vm.tiktok.com/ZS96TUKn8Wjw3-TpJnR/" target="_blank" class="w-10 h-10 bg-slate-800 rounded-xl flex items-center justify-center hover:bg-slate-700 transition"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+            <div class="border-t border-white/10 mt-6 pt-6 text-center text-xs text-slate-400">
+                <p>© 2026 Sépticos Santa Bárbara. Todos los derechos reservados. · <a href="../../index.html" class="hover:text-brand transition">Inicio</a> · <a href="instalacion-profesional.html" class="hover:text-brand transition">Instalación</a> · <a href="tanques-almacenamiento.html" class="hover:text-brand transition">Tanques</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ═══════════ BOTÓN FLOTANTE WHATSAPP ═══════════ -->
+    <a href="https://wa.me/573133815853?text=Hola%20Didier%2C%20me%20interesa%20el%20servicio%20de%20Limpieza%20y%20Mantenimiento%20de%20Sépticos%20Santa%20Bárbara" target="_blank" class="wa-float">
+        <i class="fa-brands fa-whatsapp text-2xl"></i>
+        <span>WhatsApp Directo</span>
+    </a>
+
+    <script>
+        document.getElementById('mobile-menu-btn').addEventListener('click', () => {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+
+        function toggleFaq(el) {
+            const item = el.parentElement;
+            const isActive = item.classList.contains('active');
+            document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('active'));
+            if (!isActive) item.classList.add('active');
+        }
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) entry.target.classList.add('visible');
+            });
+        }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+        const timelineObserver = new IntersectionObserver((entries) => {
+            entries.forEach((entry, i) => {
+                if (entry.isIntersecting) setTimeout(() => entry.target.classList.add('visible'), i * 120);
+            });
+        }, { threshold: 0.1 });
+        document.querySelectorAll('.timeline-step').forEach(el => timelineObserver.observe(el));
+    </script>
+
+</body>
+</html>

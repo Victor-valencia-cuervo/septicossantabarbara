@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instalación Profesional de Sistemas Sépticos | Sépticos Santa Bárbara</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../../images/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../../css/styles.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: { light: '#38bdf8', DEFAULT: '#0284c7', dark: '#0369a1', accent: '#06b6d4', navy: '#0f172a' }
+                    },
+                    fontFamily: { sans: ['Inter', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+    <meta name="description" content="Instalación profesional de sistemas sépticos para viviendas, fincas y proyectos rurales. Sépticos Santa Bárbara - Didier Cuervo.">
+</head>
+
+<body class="bg-slate-50 text-slate-800 font-sans antialiased">
+
+    <!-- ═══════════ NAVBAR FIJA ═══════════ -->
+    <nav class="fixed top-0 left-0 right-0 bg-white/95 backdrop-blur-md z-40 border-b border-sky-100 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16 md:h-20">
+                <a href="../../index.html" class="flex items-center gap-3">
+                    <img src="../../images/logo.png" alt="Sépticos Santa Bárbara" class="h-10 sm:h-12 w-auto object-contain"
+                        onerror="this.src='https://placehold.co/60x60/0284c7/ffffff?text=SSB'">
+                    <div class="flex flex-col">
+                        <span class="font-extrabold text-brand text-sm md:text-base leading-tight tracking-wider uppercase">SÉPTICOS</span>
+                        <span class="font-bold text-slate-600 text-[10px] md:text-xs tracking-widest leading-none">SANTA BÁRBARA</span>
+                    </div>
+                </a>
+
+                <div class="hidden lg:flex space-x-6 items-center">
+                    <a href="../../index.html" class="text-slate-600 hover:text-brand font-semibold text-sm transition">Inicio</a>
+                    <a href="../../index.html#servicios" class="text-brand font-bold text-sm border-b-2 border-brand pb-0.5">Servicios</a>
+                    <a href="../../index.html#galeria" class="text-slate-600 hover:text-brand font-semibold text-sm transition">Galería</a>
+                    <a href="../../index.html#cotizador" class="text-slate-600 hover:text-brand font-semibold text-sm transition">Cotizador</a>
+                    <a href="../../index.html#resenas" class="text-slate-600 hover:text-brand font-semibold text-sm transition">Reseñas</a>
+                    <a href="../../index.html#contacto"
+                        class="bg-brand text-white px-5 py-2.5 rounded-full hover:bg-brand-dark transition-all duration-300 shadow-md font-bold text-sm flex items-center gap-2">
+                        <i class="fa-solid fa-phone"></i> Contáctanos
+                    </a>
+                </div>
+
+                <button id="mobile-menu-btn" class="lg:hidden text-slate-600 hover:text-brand focus:outline-none p-2">
+                    <i class="fa-solid fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-sky-100 shadow-lg absolute w-full left-0 z-50">
+            <div class="px-4 pt-2 pb-6 space-y-2">
+                <a href="../../index.html" class="block px-3 py-2 text-slate-700 hover:text-brand hover:bg-sky-50 rounded-md font-medium">Inicio</a>
+                <a href="../../index.html#galeria" class="block px-3 py-2 text-slate-700 hover:text-brand hover:bg-sky-50 rounded-md font-medium">Galería</a>
+                <a href="../../index.html#cotizador" class="block px-3 py-2 text-slate-700 hover:text-brand hover:bg-sky-50 rounded-md font-medium">Cotizador</a>
+                <a href="../../index.html#contacto" class="block text-center bg-brand text-white py-3 rounded-xl font-bold hover:bg-brand-dark transition shadow-md">
+                    <i class="fa-solid fa-phone mr-1"></i> Contáctanos
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ═══════════ BREADCRUMB ═══════════ -->
+    <div class="breadcrumb-bar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <nav class="flex items-center gap-2 text-xs sm:text-sm">
+                <a href="../../index.html" class="text-sky-300 hover:text-white transition font-medium flex items-center gap-1">
+                    <i class="fa-solid fa-house text-xs"></i> Inicio
+                </a>
+                <i class="fa-solid fa-chevron-right text-sky-500 text-xs"></i>
+                <span class="text-white font-semibold">Instalación Profesional</span>
+            </nav>
+        </div>
+    </div>
+
+    <!-- ═══════════ HERO ═══════════ -->
+    <section class="service-hero"
+        style="background-image: linear-gradient(to right, rgba(15,23,42,0.92), rgba(3,105,161,0.65)), url('../../images/hero-bg.jpg'); background-size:cover; background-position:center;">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full py-20">
+            <div class="max-w-3xl">
+                <div class="hero-animate hero-delay-1 inline-flex items-center gap-2 bg-white/10 backdrop-blur-md px-4 py-1.5 rounded-full text-sky-200 text-xs sm:text-sm font-semibold tracking-wider mb-6">
+                    <i class="fa-solid fa-screwdriver-wrench text-sky-400"></i>
+                    Servicio Especializado
+                </div>
+                <h1 class="hero-animate hero-delay-2 text-4xl sm:text-5xl md:text-6xl font-black text-white leading-tight mb-6">
+                    Instalación Profesional de<br>
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-sky-300 to-cyan-300">Sistemas Sépticos</span>
+                </h1>
+                <p class="hero-animate hero-delay-3 text-lg md:text-xl text-sky-100 font-light max-w-2xl mb-10 leading-relaxed">
+                    Diseñamos e instalamos sistemas sépticos seguros, eficientes y duraderos para viviendas, fincas y proyectos rurales.
+                </p>
+                <div class="hero-animate hero-delay-4 flex flex-col sm:flex-row gap-4">
+                    <a href="#whatsapp-cta" id="cta-cotizar"
+                        class="bg-gradient-to-r from-sky-500 to-brand text-white px-8 py-4 rounded-xl hover:shadow-xl transition-all font-bold text-base flex items-center justify-center gap-2 shadow-lg">
+                        <i class="fa-solid fa-paper-plane"></i> Solicitar Cotización
+                    </a>
+                    <a href="#que-incluye"
+                        class="bg-white/10 hover:bg-white/20 backdrop-blur-md text-white border border-white/20 px-8 py-4 rounded-xl transition font-bold text-base flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-list-check text-sky-300"></i> Ver qué incluye
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════ QUÉ ES UNA INSTALACIÓN SÉPTICA ═══════════ -->
+    <section class="bg-white py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="reveal">
+                    <span class="text-brand font-bold tracking-widest uppercase text-sm">Lo que debes saber</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-2 mb-6">¿Qué es una Instalación Séptica?</h2>
+                    <div class="space-y-4 text-slate-600 font-light leading-relaxed">
+                        <p>Un <strong class="text-slate-800 font-semibold">sistema séptico</strong> es una solución descentralizada de tratamiento de aguas residuales, ideal para zonas rurales y propiedades sin acceso a alcantarillado municipal.</p>
+                        <p><strong class="text-slate-800 font-semibold">¿Cómo funciona?</strong> Las aguas residuales del hogar fluyen hacia un tanque séptico donde los sólidos se sedimentan y los líquidos son filtrados de manera natural a través de un campo de absorción o filtro anaerobio (FAFA).</p>
+                        <p><strong class="text-slate-800 font-semibold">¿Para qué sirve?</strong> Garantiza el tratamiento ecológico y seguro de las aguas negras, protegiendo el suelo y las fuentes hídricas de la contaminación.</p>
+                        <p><strong class="text-slate-800 font-semibold">¿Cuándo se necesita?</strong> Cuando su propiedad no cuenta con servicio de alcantarillado, al construir una casa nueva, finca o negocio en área rural, o al reemplazar un sistema antiguo que falla.</p>
+                    </div>
+                </div>
+                <div class="reveal">
+                    <div class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-sky-100">
+                        <img src="../../images/galeria/instalacion-01.jpg" alt="Instalación de sistema séptico"
+                            class="w-full h-80 sm:h-96 object-cover"
+                            onerror="this.src='https://placehold.co/600x400/0369a1/ffffff?text=Sistema+Séptico'">
+                        <div class="absolute inset-0 bg-gradient-to-t from-slate-900/70 via-transparent to-transparent flex items-end p-6">
+                            <p class="text-white font-bold">Pozo séptico en proceso de instalación</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════ QUÉ INCLUYE ═══════════ -->
+    <section id="que-incluye" class="bg-sky-50 py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 reveal">
+                <span class="text-brand font-bold tracking-widest uppercase text-sm">Servicio Completo</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-2">¿Qué incluye nuestro servicio?</h2>
+                <div class="w-24 h-1.5 bg-brand mx-auto mt-3 rounded-full"></div>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
+
+                <div class="service-card reveal text-center">
+                    <div class="w-14 h-14 bg-sky-100 rounded-2xl flex items-center justify-center text-brand text-2xl mx-auto mb-4 shadow-md">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-800 text-lg mb-2">Estudio del Terreno</h3>
+                    <p class="text-slate-500 font-light text-sm leading-relaxed">Análisis de permeabilidad del suelo y evaluación topográfica para determinar la mejor solución.</p>
+                </div>
+
+                <div class="service-card reveal text-center" style="transition-delay:0.08s">
+                    <div class="w-14 h-14 bg-cyan-100 rounded-2xl flex items-center justify-center text-cyan-600 text-2xl mx-auto mb-4 shadow-md">
+                        <i class="fa-solid fa-drafting-compass"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-800 text-lg mb-2">Diseño del Sistema</h3>
+                    <p class="text-slate-500 font-light text-sm leading-relaxed">Dimensionamiento según la cantidad de usuarios y normatividad ambiental vigente.</p>
+                </div>
+
+                <div class="service-card reveal text-center" style="transition-delay:0.16s">
+                    <div class="w-14 h-14 bg-blue-100 rounded-2xl flex items-center justify-center text-blue-600 text-2xl mx-auto mb-4 shadow-md">
+                        <i class="fa-solid fa-trowel"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-800 text-lg mb-2">Excavación</h3>
+                    <p class="text-slate-500 font-light text-sm leading-relaxed">Excavación técnica con maquinaria adecuada, respetando la estructura del terreno.</p>
+                </div>
+
+                <div class="service-card reveal text-center" style="transition-delay:0.24s">
+                    <div class="w-14 h-14 bg-sky-100 rounded-2xl flex items-center justify-center text-brand text-2xl mx-auto mb-4 shadow-md">
+                        <i class="fa-solid fa-screwdriver-wrench"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-800 text-lg mb-2">Instalación</h3>
+                    <p class="text-slate-500 font-light text-sm leading-relaxed">Montaje profesional del tanque, tuberías y filtros con materiales certificados.</p>
+                </div>
+
+                <div class="service-card reveal text-center" style="transition-delay:0.32s">
+                    <div class="w-14 h-14 bg-emerald-100 rounded-2xl flex items-center justify-center text-emerald-600 text-2xl mx-auto mb-4 shadow-md">
+                        <i class="fa-solid fa-vial"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-800 text-lg mb-2">Pruebas de Funcionamiento</h3>
+                    <p class="text-slate-500 font-light text-sm leading-relaxed">Verificación hidráulica del sistema para garantizar la correcta operación antes de la entrega.</p>
+                </div>
+
+                <div class="service-card reveal text-center" style="transition-delay:0.40s">
+                    <div class="w-14 h-14 bg-amber-100 rounded-2xl flex items-center justify-center text-amber-600 text-2xl mx-auto mb-4 shadow-md">
+                        <i class="fa-solid fa-flag-checkered"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-800 text-lg mb-2">Entrega del Proyecto</h3>
+                    <p class="text-slate-500 font-light text-sm leading-relaxed">Capacitación al propietario sobre uso, mantenimiento preventivo y garantía del sistema.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════ PROCESO (TIMELINE) ═══════════ -->
+    <section class="bg-white py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 reveal">
+                <span class="text-brand font-bold tracking-widest uppercase text-sm">Paso a Paso</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-2">Nuestro Proceso</h2>
+                <div class="w-24 h-1.5 bg-brand mx-auto mt-3 rounded-full"></div>
+                <p class="text-slate-500 font-light mt-4 max-w-xl mx-auto text-sm sm:text-base">Cada proyecto sigue una metodología rigurosa para garantizar calidad y durabilidad.</p>
+            </div>
+
+            <div class="max-w-2xl mx-auto">
+                <div class="timeline">
+
+                    <div class="timeline-step">
+                        <div class="timeline-dot">1</div>
+                        <div class="bg-sky-50 border border-sky-100 rounded-2xl p-5 hover:border-brand/40 hover:shadow-md transition-all">
+                            <h3 class="font-bold text-slate-800 text-lg flex items-center gap-2"><i class="fa-solid fa-calendar-check text-brand text-sm"></i> Visita Técnica</h3>
+                            <p class="text-slate-500 font-light text-sm mt-1 leading-relaxed">Un técnico visita su propiedad para evaluar las condiciones del terreno, accesos y necesidades específicas del proyecto.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-step">
+                        <div class="timeline-dot">2</div>
+                        <div class="bg-sky-50 border border-sky-100 rounded-2xl p-5 hover:border-brand/40 hover:shadow-md transition-all">
+                            <h3 class="font-bold text-slate-800 text-lg flex items-center gap-2"><i class="fa-solid fa-flask text-cyan-600 text-sm"></i> Estudio del Terreno</h3>
+                            <p class="text-slate-500 font-light text-sm mt-1 leading-relaxed">Realizamos pruebas de percolación (absorción) y análisis del subsuelo para determinar el tipo de sistema más adecuado.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-step">
+                        <div class="timeline-dot">3</div>
+                        <div class="bg-sky-50 border border-sky-100 rounded-2xl p-5 hover:border-brand/40 hover:shadow-md transition-all">
+                            <h3 class="font-bold text-slate-800 text-lg flex items-center gap-2"><i class="fa-solid fa-pen-ruler text-blue-600 text-sm"></i> Diseño</h3>
+                            <p class="text-slate-500 font-light text-sm mt-1 leading-relaxed">Elaboramos el diseño técnico del sistema según la norma RAS 2000 y los requerimientos ambientales regionales.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-step">
+                        <div class="timeline-dot">4</div>
+                        <div class="bg-sky-50 border border-sky-100 rounded-2xl p-5 hover:border-brand/40 hover:shadow-md transition-all">
+                            <h3 class="font-bold text-slate-800 text-lg flex items-center gap-2"><i class="fa-solid fa-trowel-bricks text-amber-600 text-sm"></i> Excavación</h3>
+                            <p class="text-slate-500 font-light text-sm mt-1 leading-relaxed">Con maquinaria especializada realizamos la excavación técnica manteniendo las dimensiones precisas del diseño aprobado.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-step">
+                        <div class="timeline-dot">5</div>
+                        <div class="bg-sky-50 border border-sky-100 rounded-2xl p-5 hover:border-brand/40 hover:shadow-md transition-all">
+                            <h3 class="font-bold text-slate-800 text-lg flex items-center gap-2"><i class="fa-solid fa-gears text-emerald-600 text-sm"></i> Instalación</h3>
+                            <p class="text-slate-500 font-light text-sm mt-1 leading-relaxed">Montaje del tanque, filtro anaerobio de flujo ascendente (FAFA), tuberías de conducción y ventilación con materiales certificados.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-step">
+                        <div class="timeline-dot">6</div>
+                        <div class="bg-sky-50 border border-sky-100 rounded-2xl p-5 hover:border-brand/40 hover:shadow-md transition-all">
+                            <h3 class="font-bold text-slate-800 text-lg flex items-center gap-2"><i class="fa-solid fa-vial text-brand text-sm"></i> Pruebas</h3>
+                            <p class="text-slate-500 font-light text-sm mt-1 leading-relaxed">Realizamos pruebas hidráulicas de presión y verificamos el correcto flujo de las aguas en todo el sistema antes de cubrirlo.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-step">
+                        <div class="timeline-dot">7</div>
+                        <div class="bg-gradient-to-r from-brand to-brand-dark border-0 rounded-2xl p-5 text-white shadow-lg">
+                            <h3 class="font-bold text-white text-lg flex items-center gap-2"><i class="fa-solid fa-circle-check text-sky-200 text-sm"></i> Entrega</h3>
+                            <p class="text-sky-100 font-light text-sm mt-1 leading-relaxed">Entrega formal del sistema, capacitación sobre mantenimiento, documentación técnica del proyecto y garantía del trabajo realizado.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════ BENEFICIOS ═══════════ -->
+    <section class="bg-slate-900 py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 reveal">
+                <span class="text-brand font-bold tracking-widest uppercase text-sm">Ventajas Comprobadas</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-2">Beneficios de una Instalación Profesional</h2>
+                <div class="w-24 h-1.5 bg-brand mx-auto mt-3 rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-5xl mx-auto">
+                <div class="benefit-check reveal bg-white/5 border border-white/10 rounded-2xl p-4">
+                    <div class="w-9 h-9 bg-emerald-500/20 rounded-xl flex items-center justify-center flex-shrink-0">
+                        <i class="fa-solid fa-check text-emerald-400 text-sm"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-white text-sm">Mayor vida útil</h4>
+                        <p class="text-slate-400 text-xs mt-0.5 leading-relaxed">Sistemas bien instalados duran más de 20 años con mantenimiento adecuado.</p>
+                    </div>
+                </div>
+
+                <div class="benefit-check reveal bg-white/5 border border-white/10 rounded-2xl p-4" style="transition-delay:0.08s">
+                    <div class="w-9 h-9 bg-emerald-500/20 rounded-xl flex items-center justify-center flex-shrink-0">
+                        <i class="fa-solid fa-check text-emerald-400 text-sm"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-white text-sm">Evita malos olores</h4>
+                        <p class="text-slate-400 text-xs mt-0.5 leading-relaxed">Un sistema correcto elimina olores y protege el bienestar del hogar.</p>
+                    </div>
+                </div>
+
+                <div class="benefit-check reveal bg-white/5 border border-white/10 rounded-2xl p-4" style="transition-delay:0.16s">
+                    <div class="w-9 h-9 bg-emerald-500/20 rounded-xl flex items-center justify-center flex-shrink-0">
+                        <i class="fa-solid fa-check text-emerald-400 text-sm"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-white text-sm">Cumple normas ambientales</h4>
+                        <p class="text-slate-400 text-xs mt-0.5 leading-relaxed">Diseño bajo normatividad RAS 2000 y resoluciones ambientales colombianas.</p>
+                    </div>
+                </div>
+
+                <div class="benefit-check reveal bg-white/5 border border-white/10 rounded-2xl p-4" style="transition-delay:0.24s">
+                    <div class="w-9 h-9 bg-emerald-500/20 rounded-xl flex items-center justify-center flex-shrink-0">
+                        <i class="fa-solid fa-check text-emerald-400 text-sm"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-white text-sm">Menos mantenimiento</h4>
+                        <p class="text-slate-400 text-xs mt-0.5 leading-relaxed">Una instalación técnica reduce la frecuencia y costo del mantenimiento futuro.</p>
+                    </div>
+                </div>
+
+                <div class="benefit-check reveal bg-white/5 border border-white/10 rounded-2xl p-4" style="transition-delay:0.32s">
+                    <div class="w-9 h-9 bg-emerald-500/20 rounded-xl flex items-center justify-center flex-shrink-0">
+                        <i class="fa-solid fa-check text-emerald-400 text-sm"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-white text-sm">Excelente filtración</h4>
+                        <p class="text-slate-400 text-xs mt-0.5 leading-relaxed">El FAFA garantiza un efluente de calidad que no contamina el suelo ni las fuentes de agua.</p>
+                    </div>
+                </div>
+
+                <div class="benefit-check reveal bg-white/5 border border-white/10 rounded-2xl p-4" style="transition-delay:0.40s">
+                    <div class="w-9 h-9 bg-emerald-500/20 rounded-xl flex items-center justify-center flex-shrink-0">
+                        <i class="fa-solid fa-check text-emerald-400 text-sm"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-white text-sm">Valoriza su propiedad</h4>
+                        <p class="text-slate-400 text-xs mt-0.5 leading-relaxed">Un sistema séptico certificado aumenta el valor comercial de su predio rural.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════ TIPOS DE INSTALACIONES (GALERÍA) ═══════════ -->
+    <section class="bg-white py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 reveal">
+                <span class="text-brand font-bold tracking-widest uppercase text-sm">Nuestros Proyectos</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-2">Tipos de Instalaciones</h2>
+                <div class="w-24 h-1.5 bg-brand mx-auto mt-3 rounded-full"></div>
+                <p class="text-slate-500 font-light mt-4 max-w-xl mx-auto text-sm sm:text-base">Trabajamos en toda clase de propiedades con soluciones a medida para cada cliente.</p>
+            </div>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-5xl mx-auto">
+
+                <div class="service-gallery-item reveal shadow-md">
+                    <img src="../../images/galeria/instalacion-01.jpg" alt="Instalación en vivienda"
+                        onerror="this.src='https://placehold.co/400x300/0369a1/ffffff?text=Viviendas'">
+                    <div class="overlay"><p class="text-white font-bold text-sm">Viviendas</p></div>
+                    <div class="absolute top-3 left-3 bg-brand text-white text-xs font-bold px-3 py-1 rounded-full">Viviendas</div>
+                </div>
+
+                <div class="service-gallery-item reveal shadow-md" style="transition-delay:0.1s">
+                    <img src="../../images/galeria/instalacion-02.jpg" alt="Instalación en parcelas"
+                        onerror="this.src='https://placehold.co/400x300/0284c7/ffffff?text=Parcelas'">
+                    <div class="overlay"><p class="text-white font-bold text-sm">Parcelas</p></div>
+                    <div class="absolute top-3 left-3 bg-cyan-600 text-white text-xs font-bold px-3 py-1 rounded-full">Parcelas</div>
+                </div>
+
+                <div class="service-gallery-item reveal shadow-md" style="transition-delay:0.2s">
+                    <img src="../../images/galeria/instalacion-03.jpg" alt="Instalación en fincas"
+                        onerror="this.src='https://placehold.co/400x300/075985/ffffff?text=Fincas'">
+                    <div class="overlay"><p class="text-white font-bold text-sm">Fincas</p></div>
+                    <div class="absolute top-3 left-3 bg-brand-dark text-white text-xs font-bold px-3 py-1 rounded-full">Fincas</div>
+                </div>
+
+                <div class="service-gallery-item reveal shadow-md" style="transition-delay:0.3s">
+                    <img src="../../images/galeria/mantenimiento-01.jpg" alt="Instalación en restaurantes"
+                        onerror="this.src='https://placehold.co/400x300/0891b2/ffffff?text=Restaurantes'">
+                    <div class="overlay"><p class="text-white font-bold text-sm">Restaurantes</p></div>
+                    <div class="absolute top-3 left-3 bg-slate-700 text-white text-xs font-bold px-3 py-1 rounded-full">Restaurantes</div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════ FAQ ═══════════ -->
+    <section class="bg-sky-50 py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 reveal">
+                <span class="text-brand font-bold tracking-widest uppercase text-sm">Resolvemos sus Dudas</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-2">Preguntas Frecuentes</h2>
+                <div class="w-24 h-1.5 bg-brand mx-auto mt-3 rounded-full"></div>
+            </div>
+
+            <div class="max-w-3xl mx-auto bg-white rounded-3xl shadow-xl border border-sky-100 p-6 sm:p-8 reveal">
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>¿Cuánto tiempo tarda la instalación?</span>
+                        <div class="faq-icon"><i class="fa-solid fa-plus"></i></div>
+                    </div>
+                    <div class="faq-answer">
+                        Una instalación residencial estándar toma entre <strong>2 y 4 días hábiles</strong>, dependiendo de la complejidad del terreno, el tipo de sistema requerido y las condiciones climáticas. Para proyectos más grandes como fincas o establecimientos comerciales, el tiempo puede extenderse hasta 7 días.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>¿Cuánto cuesta una instalación séptica?</span>
+                        <div class="faq-icon"><i class="fa-solid fa-plus"></i></div>
+                    </div>
+                    <div class="faq-answer">
+                        El costo varía según la capacidad del sistema, el tipo de suelo y la distancia de la obra. Los precios parten desde <strong>$2.500.000 COP</strong> para sistemas básicos de vivienda. Le ofrecemos una visita técnica gratuita con cotización personalizada sin ningún compromiso. Contáctenos por WhatsApp para más detalles.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>¿Cuántas personas puede soportar el sistema?</span>
+                        <div class="faq-icon"><i class="fa-solid fa-plus"></i></div>
+                    </div>
+                    <div class="faq-answer">
+                        El sistema se diseña exactamente para la cantidad de usuarios requeridos. Un tanque de <strong>1.000 litros</strong> cubre hasta 5 personas, uno de <strong>2.000 litros</strong> hasta 10 personas, y sistemas de mayor capacidad para restaurantes, hoteles o proyectos comerciales. Cada diseño es a medida.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <span>¿Necesita licencia o permiso ambiental?</span>
+                        <div class="faq-icon"><i class="fa-solid fa-plus"></i></div>
+                    </div>
+                    <div class="faq-answer">
+                        En la mayoría de los municipios colombianos, los sistemas sépticos para uso doméstico <strong>no requieren licencia ambiental</strong>, pero deben cumplir con la Norma RAS 2000 y los parámetros de la autoridad ambiental regional (CAR). Nuestros sistemas están diseñados bajo estas normativas, lo que le brinda total tranquilidad legal.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════ CTA FINAL ═══════════ -->
+    <section id="whatsapp-cta" class="bg-gradient-to-br from-brand-dark to-slate-900 py-20 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="reveal max-w-3xl mx-auto">
+                <div class="w-20 h-20 bg-white/10 rounded-3xl flex items-center justify-center text-sky-300 text-3xl mx-auto mb-6">
+                    <i class="fa-solid fa-screwdriver-wrench"></i>
+                </div>
+                <h2 class="text-3xl sm:text-4xl font-black mb-4">¿Necesita instalar un sistema séptico?</h2>
+                <p class="text-sky-100 font-light text-lg mb-8 leading-relaxed">
+                    Solicite una visita técnica gratuita y comuníquese con nosotros por WhatsApp o llámenos para recibir asesoría personalizada. Atendemos toda la región.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="https://wa.me/573133815853?text=Hola%20Didier%2C%20necesito%20una%20instalación%20de%20sistema%20séptico.%20¿Podría%20darme%20información%20y%20una%20cotización?"
+                        target="_blank"
+                        class="bg-emerald-600 hover:bg-emerald-500 text-white font-black py-4 px-8 rounded-2xl transition shadow-xl flex items-center justify-center gap-3 text-lg">
+                        <i class="fa-brands fa-whatsapp text-2xl"></i> Escribir por WhatsApp
+                    </a>
+                    <a href="tel:3133815853"
+                        class="bg-white/10 hover:bg-white/20 border border-white/20 text-white font-bold py-4 px-8 rounded-2xl transition flex items-center justify-center gap-3 text-lg">
+                        <i class="fa-solid fa-phone"></i> 313 381 5853
+                    </a>
+                </div>
+                <div class="mt-8 flex flex-wrap justify-center gap-4 text-sm text-sky-200">
+                    <span class="flex items-center gap-1"><i class="fa-solid fa-circle-check text-emerald-400"></i> Visita técnica gratuita</span>
+                    <span class="flex items-center gap-1"><i class="fa-solid fa-circle-check text-emerald-400"></i> Cotización sin compromiso</span>
+                    <span class="flex items-center gap-1"><i class="fa-solid fa-circle-check text-emerald-400"></i> Garantía en el trabajo</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════ SERVICIOS RELACIONADOS ═══════════ -->
+    <section class="bg-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-10 reveal">
+                <span class="text-brand font-bold tracking-widest uppercase text-sm">También Ofrecemos</span>
+                <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 mt-2">Servicios Relacionados</h2>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-3xl mx-auto">
+                <a href="limpieza-mantenimiento.html" class="service-card reveal flex items-center gap-4 hover:bg-sky-50">
+                    <div class="w-14 h-14 bg-cyan-100 rounded-2xl flex items-center justify-center text-cyan-600 text-2xl flex-shrink-0">
+                        <i class="fa-solid fa-pump-soap"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-slate-800">Limpieza & Mantenimiento</h3>
+                        <p class="text-slate-500 text-sm font-light mt-1">Succión y lavado profesional de pozos sépticos.</p>
+                        <span class="text-brand text-sm font-bold flex items-center gap-1 mt-2">Ver servicio <i class="fa-solid fa-arrow-right text-xs"></i></span>
+                    </div>
+                </a>
+                <a href="tanques-almacenamiento.html" class="service-card reveal flex items-center gap-4 hover:bg-sky-50" style="transition-delay:0.1s">
+                    <div class="w-14 h-14 bg-blue-100 rounded-2xl flex items-center justify-center text-blue-600 text-2xl flex-shrink-0">
+                        <i class="fa-solid fa-faucet-drip"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-slate-800">Tanques de Almacenamiento</h3>
+                        <p class="text-slate-500 text-sm font-light mt-1">Venta e instalación de tanques certificados de 250 a 10,000 L.</p>
+                        <span class="text-blue-600 text-sm font-bold flex items-center gap-1 mt-2">Ver catálogo <i class="fa-solid fa-arrow-right text-xs"></i></span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══════════ FOOTER ═══════════ -->
+    <footer class="bg-sky-950 text-white py-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                <div class="flex items-center gap-3">
+                    <img src="../../images/logo.png" alt="Logo" class="h-10 w-auto object-contain"
+                        onerror="this.src='https://placehold.co/40x40/0284c7/ffffff?text=SSB'">
+                    <div>
+                        <span class="font-extrabold text-brand text-sm tracking-wider uppercase block">SÉPTICOS SANTA BÁRBARA</span>
+                        <span class="text-slate-400 text-xs">Didier Cuervo · 313 381 5853</span>
+                    </div>
+                </div>
+                <div class="flex gap-4">
+                    <a href="https://wa.me/573133815853" target="_blank" class="w-10 h-10 bg-emerald-600 rounded-xl flex items-center justify-center hover:bg-emerald-500 transition"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="https://www.facebook.com/share/192qztjzH5/" target="_blank" class="w-10 h-10 bg-blue-700 rounded-xl flex items-center justify-center hover:bg-blue-600 transition"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://vm.tiktok.com/ZS96TUKn8Wjw3-TpJnR/" target="_blank" class="w-10 h-10 bg-slate-800 rounded-xl flex items-center justify-center hover:bg-slate-700 transition"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+            <div class="border-t border-white/10 mt-6 pt-6 text-center text-xs text-slate-400">
+                <p>© 2026 Sépticos Santa Bárbara. Todos los derechos reservados. · <a href="../../index.html" class="hover:text-brand transition">Inicio</a> · <a href="limpieza-mantenimiento.html" class="hover:text-brand transition">Limpieza</a> · <a href="tanques-almacenamiento.html" class="hover:text-brand transition">Tanques</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ═══════════ BOTÓN FLOTANTE WHATSAPP ═══════════ -->
+    <a href="https://wa.me/573133815853?text=Hola%20Didier%2C%20me%20interesa%20el%20servicio%20de%20Instalación%20Profesional%20de%20Sépticos%20Santa%20Bárbara" target="_blank" class="wa-float">
+        <i class="fa-brands fa-whatsapp text-2xl"></i>
+        <span>Cotizar por WhatsApp</span>
+    </a>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('mobile-menu-btn').addEventListener('click', () => {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+
+        // FAQ Accordion
+        function toggleFaq(el) {
+            const item = el.parentElement;
+            const isActive = item.classList.contains('active');
+            document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('active'));
+            if (!isActive) item.classList.add('active');
+        }
+
+        // Smooth scroll for CTA button to WhatsApp section
+        document.getElementById('cta-cotizar').addEventListener('click', function(e) {
+            e.preventDefault();
+            document.getElementById('whatsapp-cta').scrollIntoView({ behavior: 'smooth', block: 'center' });
+        });
+
+        // Scroll reveal (IntersectionObserver)
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+        // Timeline animation
+        const timelineObserver = new IntersectionObserver((entries) => {
+            entries.forEach((entry, i) => {
+                if (entry.isIntersecting) {
+                    setTimeout(() => entry.target.classList.add('visible'), i * 100);
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.timeline-step').forEach(el => timelineObserver.observe(el));
+    </script>
+
+</body>
+</html>

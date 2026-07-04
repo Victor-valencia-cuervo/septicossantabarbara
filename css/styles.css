@@ -4,7 +4,7 @@
    Didier Cuervo | 313 381 5853
    ===================================================== */
 
-/* --- Scroll Snapping --- */
+/* --- Scroll Snapping (Página Principal) --- */
 .snap-container {
     scroll-snap-type: none;
     overflow-y: scroll;
@@ -15,9 +15,7 @@
 }
 
 @media (min-width: 1024px) {
-    .snap-container {
-        scroll-snap-type: y mandatory;
-    }
+    .snap-container { scroll-snap-type: y mandatory; }
 }
 
 .snap-section {
@@ -30,85 +28,195 @@
     overflow: hidden;
 }
 
-/* --- Ocultar barra de scroll (mantiene funcionalidad) --- */
+/* --- Ocultar barra de scroll --- */
 .no-scrollbar::-webkit-scrollbar { display: none; }
-.no-scrollbar {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-}
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
 
 /* --- Puntos de Navegación Lateral --- */
 .nav-dots {
-    position: fixed;
-    right: 20px;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 50;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
+    position: fixed; right: 20px; top: 50%;
+    transform: translateY(-50%); z-index: 50;
+    display: flex; flex-direction: column; gap: 12px;
 }
 
 .dot {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
+    width: 12px; height: 12px; border-radius: 50%;
     background-color: rgba(2, 132, 199, 0.3);
-    cursor: pointer;
-    transition: all 0.3s ease;
+    cursor: pointer; transition: all 0.3s ease;
 }
 
 .dot.active {
-    background-color: #0284c7;
-    transform: scale(1.4);
+    background-color: #0284c7; transform: scale(1.4);
     box-shadow: 0 0 8px rgba(2, 132, 199, 0.6);
 }
 
-/* --- Comparador Antes y Después deslizable --- */
-.comparison-slider {
-    position: relative;
-    overflow: hidden;
-}
-
-.comparison-img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.img-before {
-    clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%);
-}
+/* --- Comparador Antes y Después --- */
+.comparison-slider { position: relative; overflow: hidden; }
+.comparison-img { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; }
+.img-before { clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%); }
 
 .slider-handle {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    width: 4px;
-    background: #ffffff;
-    cursor: ew-resize;
-    transform: translateX(-50%);
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
-    z-index: 10;
+    position: absolute; top: 0; bottom: 0; left: 50%;
+    width: 4px; background: #ffffff; cursor: ew-resize;
+    transform: translateX(-50%); box-shadow: 0 0 10px rgba(0,0,0,0.5); z-index: 10;
 }
 
 .slider-button {
-    position: absolute;
-    top: 50%;
-    left: 50%;
+    position: absolute; top: 50%; left: 50%;
     transform: translate(-50%, -50%);
-    width: 40px;
-    height: 40px;
-    background: #0284c7;
-    color: white;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
-    pointer-events: none;
+    width: 40px; height: 40px; background: #0284c7; color: white;
+    border-radius: 50%; display: flex; align-items: center; justify-content: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3); pointer-events: none;
+}
+
+/* =====================================================
+   ANIMACIONES HERO
+   ===================================================== */
+
+@keyframes heroFadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to   { opacity: 1; transform: translateY(0);    }
+}
+
+.hero-animate { animation: heroFadeIn 800ms cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
+.hero-delay-1 { animation-delay: 80ms;  }
+.hero-delay-2 { animation-delay: 210ms; }
+.hero-delay-3 { animation-delay: 350ms; }
+.hero-delay-4 { animation-delay: 480ms; }
+.hero-delay-5 { animation-delay: 610ms; }
+.hero-card-animate { animation: heroFadeIn 900ms cubic-bezier(0.25, 0.46, 0.45, 0.94) 300ms both; }
+
+/* =====================================================
+   PÁGINAS DE SERVICIOS
+   ===================================================== */
+
+/* --- Breadcrumb --- */
+.breadcrumb-bar {
+    background: linear-gradient(to right, #0f172a, #0369a1);
+    padding: 10px 0; position: relative; z-index: 30;
+    margin-top: 64px;
+}
+@media (min-width: 768px) { .breadcrumb-bar { margin-top: 80px; } }
+
+/* --- Hero de Servicio --- */
+.service-hero {
+    position: relative; min-height: 70vh;
+    display: flex; align-items: center;
+    background-size: cover; background-position: center; overflow: hidden;
+}
+@media (min-width: 768px) { .service-hero { min-height: 80vh; } }
+
+/* --- Timeline Vertical --- */
+.timeline { position: relative; padding-left: 52px; }
+.timeline::before {
+    content: ''; position: absolute; left: 18px; top: 0; bottom: 0;
+    width: 3px; background: linear-gradient(to bottom, #0284c7, #06b6d4); border-radius: 2px;
+}
+
+.timeline-step {
+    position: relative; margin-bottom: 2rem;
+    opacity: 0; transform: translateX(-16px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.timeline-step.visible { opacity: 1; transform: translateX(0); }
+
+.timeline-dot {
+    position: absolute; left: -40px; top: 4px;
+    width: 36px; height: 36px;
+    background: linear-gradient(135deg, #0284c7, #06b6d4);
+    border-radius: 50%; display: flex; align-items: center; justify-content: center;
+    color: white; font-weight: 800; font-size: 13px;
+    box-shadow: 0 4px 12px rgba(2, 132, 199, 0.4); border: 3px solid white;
+}
+
+/* --- Scroll Reveal --- */
+.reveal {
+    opacity: 0; transform: translateY(24px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.reveal.visible { opacity: 1; transform: translateY(0); }
+
+/* --- FAQ Acordeón --- */
+.faq-item { border-bottom: 1px solid #e0f2fe; }
+
+.faq-question {
+    display: flex; justify-content: space-between; align-items: center;
+    padding: 1.25rem 0; cursor: pointer;
+    transition: color 0.2s ease; user-select: none;
+    font-weight: 600; font-size: 0.95rem; color: #1e293b;
+}
+.faq-question:hover { color: #0284c7; }
+
+.faq-icon {
+    width: 32px; height: 32px; background: #e0f2fe; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    color: #0284c7; transition: all 0.3s ease; flex-shrink: 0;
+    font-size: 14px;
+}
+.faq-item.active .faq-icon { background: #0284c7; color: white; transform: rotate(45deg); }
+
+.faq-answer {
+    max-height: 0; overflow: hidden;
+    transition: max-height 0.4s cubic-bezier(0.4,0,0.2,1), padding 0.3s ease;
+    padding-bottom: 0; color: #475569; font-size: 0.9rem; line-height: 1.7;
+}
+.faq-item.active .faq-answer { max-height: 400px; padding-bottom: 1.25rem; }
+
+/* --- Botón Flotante WhatsApp --- */
+.wa-float {
+    position: fixed; bottom: 24px; right: 24px; z-index: 999;
+    display: flex; align-items: center; gap: 10px;
+    background: #16a34a; color: white; padding: 14px 20px;
+    border-radius: 50px; box-shadow: 0 8px 25px rgba(22, 163, 74, 0.4);
+    font-weight: 700; font-size: 14px; text-decoration: none;
+    transition: all 0.3s ease; animation: waPulse 2.5s ease-in-out infinite;
+}
+.wa-float:hover { background: #15803d; transform: translateY(-2px) scale(1.03); box-shadow: 0 12px 35px rgba(22, 163, 74, 0.5); }
+
+@keyframes waPulse {
+    0%, 100% { box-shadow: 0 8px 25px rgba(22, 163, 74, 0.4); }
+    50%       { box-shadow: 0 8px 35px rgba(22, 163, 74, 0.65); }
+}
+
+/* --- Modal de Tanques --- */
+.modal-overlay {
+    position: fixed; inset: 0; background: rgba(15,23,42,0.8);
+    z-index: 1000; display: flex; align-items: center; justify-content: center;
+    padding: 1rem; opacity: 0; visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    backdrop-filter: blur(4px);
+}
+.modal-overlay.open { opacity: 1; visibility: visible; }
+
+.modal-box {
+    background: white; border-radius: 1.5rem; width: 100%; max-width: 560px;
+    max-height: 90vh; overflow-y: auto;
+    transform: scale(0.92) translateY(16px);
+    transition: transform 0.35s cubic-bezier(0.25,0.46,0.45,0.94);
+    box-shadow: 0 25px 60px rgba(0,0,0,0.3);
+}
+.modal-overlay.open .modal-box { transform: scale(1) translateY(0); }
+
+/* --- Checklist Beneficios --- */
+.benefit-check {
+    display: flex; align-items: flex-start; gap: 12px;
+    padding: 14px 18px; background: white;
+    border-radius: 12px; border: 1px solid #e0f2fe;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    transition: all 0.25s ease;
+}
+.benefit-check:hover { border-color: #0284c7; box-shadow: 0 4px 16px rgba(2,132,199,0.1); }
+
+/* --- Card de Catálogo Tanques --- */
+.tank-card {
+    background: white; border-radius: 1.5rem; overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08); border: 1px solid #e0f2fe;
+    transition: all 0.3s ease; cursor: pointer;
+}
+.tank-card:hover { transform: translateY(-6px); box-shadow: 0 16px 40px rgba(2,132,199,0.18); border-color: #0284c7; }
+
+/* Responsive WA float */
+@media (max-width: 640px) {
+    .wa-float span { display: none; }
+    .wa-float { padding: 14px; border-radius: 50%; }
 }
